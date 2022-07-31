@@ -3,6 +3,7 @@ xcuserdata/
 .floo
 
 cross-*.txt
+cross.txt
 root.tar.gz
 
 node_modules
