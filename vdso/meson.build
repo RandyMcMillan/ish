@@ -6,7 +6,8 @@
 # compatible toolchain you can edit this file to point to it instead.)
 
 # Default install paths for Homebrew on Intel, Homebrew on Apple silicon, and MacPorts, respectively.
-clang = find_program('/usr/local/opt/llvm/bin/clang', '/opt/homebrew/opt/llvm/bin/clang', '/opt/local/bin/clang', 'clang')
+# /usr/local/opt/./llvm@19/bin/
+clang = find_program('/usr/local/opt/llvm@14/bin/clang', '/opt/homebrew/opt/llvm@14/bin/clang')
 check_cc = find_program('check-cc.sh')
 result = run_command(check_cc, clang, check: false)
 if result.returncode() != 0
